@@ -1,0 +1,12 @@
+a:hover {
+    color: violet;
+    cursor: pointer;
+}
+
+a:link {
+    background-color: aquamarine;
+}
+
+li:nth-child(2n+1) {
+    background-color: red;
+}
