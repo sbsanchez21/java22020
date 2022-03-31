@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    background-color: rgb(233, 232, 232);
+}
+
+.caja1 {
+    display: inline-block;
+    width: auto;
+    height: 50px;
+    background-color: lightgray;
+    margin: .4rem;
+    padding: 1rem;
+    border: 1.5px solid;
+    border-radius: 2rem;
+    vertical-align: middle;
+    text-align: center;
+}
