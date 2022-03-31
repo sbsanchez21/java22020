@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+.caja {
+    position: relative;
+    background-color: lightcoral;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+#posRelative {
+    position: relative;
+    background-color: blue;
+    top: 20px;
+    left: 30px;
+}
+
+#posStatic {
+    position: static;
+    background-color: red;
+    top: 20px;
+    left: 30px;
+}
+
+#posFixed {
+    position: fixed;
+    background-color: green;
+    top: 5px;
+    left: 6px;
+}
+
+#posAbsolute {
+    position: absolute;
+    background-color: gold;
+    top: 5px;
+    left: 8px;
+}
