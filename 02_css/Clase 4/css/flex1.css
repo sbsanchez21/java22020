@@ -1,0 +1,27 @@
+.flex-container {
+    background-color: lightcoral;
+    display: flex;
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: row wrap-reverse;
+}
+
+.flex-container div {
+    background-color: lightblue;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.flex-justify {
+    background-color: lightcoral;
+    display: flex;
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: wrap-reverse; */
+    justify-content: space-around;
+}
+
+.flex-justify div {
+    background-color: lightblue;
+    margin: .5rem;
+    padding: .5rem;
+}

@@ -1,0 +1,32 @@
+p::first-line {
+    background-color: yellow;
+}
+
+p::first-letter {
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+h4::before {
+    content: "Leer esto: ";
+    background-color: lightcoral;
+}
+
+h5::after {
+    content: " Cita - Alicia en el país de las maravillas - 1914";
+    font-style: italic;
+}
+
+.texto::first-line {
+    font-weight: bold;
+}
+
+::selection {
+    background-color: yellow;
+}
+
+img:hover {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+}
