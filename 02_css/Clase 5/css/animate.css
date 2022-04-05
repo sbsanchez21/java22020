@@ -1,0 +1,15 @@
+.texto {
+    background-color: lightgray;
+    border-radius: 5px;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.animate__animated.animate__fadeInLeft {
+    --animate-duration: 5s;
+  } 
+
+  .animate__animated.animate__rotateIn {
+    --animate-duration: 1s;
+    --animate-delay: 3s;
+  }   
