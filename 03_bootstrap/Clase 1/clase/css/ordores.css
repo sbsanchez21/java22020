@@ -1,0 +1,17 @@
+* {
+    font-size: 14px;
+}
+
+
+.card {
+    width: 20rem;
+    background-color: rgb(241, 241, 241);
+}
+
+.card a {
+    padding: .2rem .4rem .2rem .4rem;
+    font-size: .7rem;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;    
+}
