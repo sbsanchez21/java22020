@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer JavaScript</title>
+    
+
+</head>
+
+<body>  
+    <br>
+    <!-- js en body, ejemplo de lógica del lado del cliente -->
+    <script>
+        alert("Abrir ventana de alerta");
+        document.write("Mi primer JavaScript");
+
+        var v = confirm("Desea enviar el mensaje?");
+        if ( v ) {
+            document.write("<br>");
+            document.write("Mensaje enviado.");
+        } else {
+            document.write("<br>");
+            document.write("Cancelado");
+        }        
+     </script>
+
+    <!-- Javascript en archivo--> 
+    <br>
+    <h1>Bienvenidos</h1>
+    <!-- referencia al archivo javascript-->
+    <script src="scripts/main.js" ></script>
+
+
+    <!-- Suma -->
+    <br>
+    <input type="text" id="a" />
+    <input type="text" id="b" />
+    <button type="button" onclick="sumar()">Sumar</button>
+    <div id="resultado"></div>
+
+    <!-- mayor 18 -->
+    <br>
+    <button type="button" onclick="mayor18()">Mayor 18</button>
+
+    <!-- ejemplos de links -->
+    <br><br><br>
+    <a href="http://www.google.com" onmouseover="javascript:alert('Mensaje');">Alert Mensaje</a>
+    <br>
+    <a href="http://www.google.com" onclick="javascript:alert('Desea salir de la página');">Salir de página</a>
+    <br>
+    <div id="vinc">
+        <a href="http://www.google.com" 
+            onmouseover="javascript: void(document.getElementById('vinc').style.fontSize='3em')" 
+            onmouseout="javascript: void(document.getElementById('vinc').style.fontSize='1em')">Tamaño letra</a>
+    </div>
+
+    <br>
+    <a href="javascript:(function(){alert('Hola gente')})()">Mensaje</a>
+    <br>
+    <a href="javascript:void(window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location)));">Facebook</a>
+    <br>
+    <a href="javascript:window.print();">Imprimir</a>
+    <br>
+    <a href="javascript:window.location.reload();">Refrescar</a>
+</body>
+</html>

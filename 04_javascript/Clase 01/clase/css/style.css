@@ -1,0 +1,9 @@
+input {
+    margin: 1rem;
+}
+
+.texto {
+    background-color: lightgray;
+    margin: 2rem;
+    padding: 1rem;
+}
