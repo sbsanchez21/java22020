@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Clase 2</title>
+</head>
+<body>
+    <script>
+        // repaso
+        var a = 5;
+        var b = 2;
+        var c = 5;
+        var d = 10;
+        // var pi = 3.14;
+        var edad = 18;
+        var nombre = "Pedro";
+        var apellido = "Juarez";
+        var hoyHaceFrio = true;
+
+        nombre=4
+        Nombre=3
+        console.log(nombre)
+        console.log(Nombre)
+
+        var saldoCtaCte = 10000
+        saldoCtaCte = 8000
+        saldoCtaCte = 1000
+
+        // uso de la consola
+        console.log("Hola")
+        console.log(`Bienvenido ${nombre} ${apellido} a nuestro sitio`)
+
+        console.error("error en index")
+        console.warn("cuidado con esto")
+
+        // operaciones aritméticas
+        var resultado = a + b; // a=5 + b=2 -> resultado=7
+        console.log(resultado);
+
+        resultado = a * b;
+        console.log(resultado);
+
+        // Concatenar
+        resultado = nombre + " " + apellido;
+        console.log(resultado);
+
+        resultado = "Juan" + 4  ;
+        console.log(resultado);
+
+        resultado = "Bienvenido " + nombre + " " + apellido + " a nuestro sitio web";
+        console.log(resultado);
+
+        resultado = `Bienvenido ${nombre} ${apellido} a nuestro sitio`; //alt+96
+        console.log(resultado); 
+
+        resultado = `Nombre y Apellido: ${resultado}`;
+        console.log(resultado);
+
+        // Operadores de comparación
+        a = 4; //asignamos el valor 4 a la variable a
+        var numero = a; //asigno el valor de a a las variable numero
+        numero == a; //comparo, devuelve true si son iguales, false sino
+
+        var numText = 3
+        numText = "pepe"
+
+        resultado = (a == b);
+        console.log( `a == b: ${resultado}`);
+        
+        resultado = (a != b);
+        console.log( `a != b: ${resultado}`);
+
+        resultado= "Juan perez" //pisa el valor anterior de resultado
+
+
+
+        resultado = (a > b);
+        console.log( `a > b: ${resultado}`);
+
+        // resultado = (a < b);
+        console.log( `a < b: ${a < b}`);
+
+        resultado = (a >= b);
+        console.log( `a >= b: ${resultado}`);
+
+        // ejemplo uso >=
+        // var edad = prompt("ingrese su edad")
+        // if (edad>=18) {
+        //     document.write("PUede ingresar a la página")
+        // } else {
+        //     document.write("NO PUede ingresar a la página")
+        // }
+
+        resultado = (a >= d);
+        console.log( `a >= d: ${resultado}`);
+
+        resultado = (a >= c);
+        console.log( `a >= c: ${resultado}`);
+
+        resultado = (a <= c);
+        console.log( `a <= c: ${resultado}`);
+
+
+        
+        // Operadores lógicos
+        resultado = (a > b) && (b > c);
+        console.log( `(a > b) && (b > c): ${resultado}`);
+
+        resultado = (a > b) && (c > b);
+        console.log( `(a > b) && (c > b): ${resultado}`);
+
+        // ejemplo &&
+        // var usuDB="pepe@gmail.com"
+        // var passDB=1234
+        // var usu = prompt("usuario")
+        // var pass=prompt("pass")
+        // if (usu==usuDB && pass==passDB) {
+        //     document.write("PUede ingresar a Ig")
+        // } else {
+        //     document.write("NO PUede ingresar a Ig")
+        // }
+
+        resultado = (a > b) || (b > c);
+        console.log( `(a > b) ||  (b > c): ${resultado}`);
+
+        resultado = (b > a) || (b > c);
+        console.log( `(b > a) ||  (b > c): ${resultado}`);
+
+        resultado = !((b > a) || (b > c));
+        console.log( `!((b > a) || (b > c)): ${resultado}`);
+        
+        // Condicionales
+        var edadMayor = 18;
+        var edad = 19;
+        // if (edad < edadMayor) {
+        //     console.log("La persona no puede ingresar al local");
+        // }
+
+        if (edad < edadMayor) {
+           console.log("La persona no puede ingresar");
+        } else {
+            console.log("La persona puede ingresar");
+        } 
+
+        // saber el nombre del mes según el número de nroMes
+        var nroMes = 1;
+        // var nroMes = prompt();
+        switch (parseInt(nroMes)) {
+            case 1:
+                console.log("Enero");
+                break; //me saca del bloque
+            
+            case 2:
+                console.log("Febrero");
+                break;
+              
+            case 3:
+                console.log("Marzo");
+                break;
+
+            default:
+                console.log("No se encontró el mes");
+                break;
+        }
+
+        // itera una cantidad de veces definida
+        for (let i = 0; i < 4; i++) {
+            console.log( `Valor de i: ${i}`);
+        }
+        
+        // ejemplo uso for
+        alumnos = ["Juan", "Pedro", "Ana", "Roberto", "Romina"]
+        for (let i = 0; i < alumnos.length; i++) {
+            console.log(alumnos[i])
+            
+        }
+
+        // ejecuta un bucle mientras sea verdadera la condición
+        let n = 0;
+        while (n < 3) {
+            //n = n + 1;
+            n++; //n==1, n==2 
+            console.log("n: " + n)
+        } 
+
+        let i = 0;
+        do {
+            i += 1;
+            console.log(i);
+        } while (i < 3);
+
+
+        // var, let, const
+        if (true) {
+            var x = 10;
+            let y = 20;
+        
+        }
+        console.log(x);
+        // console.log(y);
+        
+        const z = 30;
+        console.log(z);
+        // z = 40;
+        const MAYOR_EDAD=18
+        const PI=3.14
+
+        console.log(Math.sqrt(16))
+        
+
+        function sumar() {
+            var x = 3;
+        }
+    </script>
+
+
+
+    
+</body>
+</html>
