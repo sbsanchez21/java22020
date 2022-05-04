@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <title>Feedback Sent</title>
+</head>
+
+<body>
+  <p align=center>&nbsp;</p>
+  <h1 align=center>
+    <font size="+1">Variables y valores enviados:</font>
+  </h1>
+
+  <table border="1" align=center width="226">
+    <tr>
+      <th align="center">Variable</th>
+      <th align="center">Valor</th>
+    </tr>
+
+    <script language="javascript">
+      var args = location.search.substr(1).split('&');
+      for (var i = 0; i < args.length; ++i) {
+        var parts = args[i].split('=');
+        if (parts != null) {
+          var field = parts[0];
+          var value = parts[1];
+          if (value == null) {
+            value = "null"
+          }
+          else {
+            value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+          }
+
+          document.writeln('<tr><td align="center">' + field + '</td>');
+          document.writeln('<td align="center">' + value + '</td></tr>');
+        }
+      }
+    </script>
+
+
+
+  </table>
+
+</body>
+
+</html>

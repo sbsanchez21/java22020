@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Validar campos Js</h3>
+
+    <form action="mostrarVariablesSubmit.html" method="get">
+        <label for="email">email</label>
+        <input type="text" name="email" id="email">
+        <button type="button" onclick="validarEMail()">Validar</button>
+
+        <!-- validación con pattern regular expresion-->
+        <br>
+        <input type="email" id="email" name="email" 
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        title="Formato incorrecto"
+        >
+
+        <br><br>
+        <label for="8char">Ingrese 8 char</label>
+        <input type="text" name="8char" id="8char">
+        <button type="button" onclick="validar8char()">Validar</button>
+
+        <!-- con patrones -->
+        <br>
+
+        <input type="text" name="texto" id="texto" pattern=".{8,}">
+
+
+        <br><br>
+        <label for="pass">password</label>
+        <input type="text" name="pass" id="pass" onkeyup="updFortaleza()">
+        Fortaleza: <span id="fortaleza" style="color: red;">0%</span>
+
+        <input type="password" id="pwd" name="pwd"
+      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+    title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+
+        <br><br>
+        <button type="submit">Enviar</button>
+        <!-- <input type="submit" value="Enviar"> -->
+    </form>
+
+    <br><br>
+    <div id="mensaje"></div>
+    <script src="js/validarCampos.js"></script>
+</body>
+</html>
