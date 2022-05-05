@@ -1,0 +1,68 @@
+- DOM
+El modelo de objeto de documento (DOM): representación estructurada del documento Html, proporciona formas de manipular este documento.
+    DOM 
+    Permite la manipulación de elementos html
+    Con DOM JavaScript obtiene todo el poder que necesita para crear HTML dinámico
+
+
+- Manipulación del DOM
+Métodos y propiedades
+    Un método es una acción que puede realizar (como agregar o eliminar un elemento HTML).
+    Encontrar elementos HTML
+    document.getElementById(id)	
+    document.getElementsByTagName(name)	
+    document.getElementsByClassName(name)	
+
+    Agregar y eliminar elementos
+    document.createElement(element)	
+    document.removeChild(element)	
+    document.appendChild(element)	
+    document.replaceChild(new, old)	
+    document.write(text)	    
+
+    Agregar controladores de eventos
+    document.getElementById(id).onclick = function(){code}
+
+    Encontrar objetos HTML
+    document.body
+    document.forms
+    document.head
+    document.images
+
+    Una propiedad es un valor que puede obtener o establecer (como cambiar el contenido de un elemento HTML).
+    Cambiar elementos HTML
+    element.innerHTML =  new html content	
+    element.attribute = new value	
+    element.style.property = new style	
+
+
+
+
+https://www.w3schools.com/js/js_htmldom.asp
+
+
+JavaScript puede cambiar todos los elementos HTML de la página.
+JavaScript puede cambiar todos los atributos HTML de la página.
+JavaScript puede cambiar todos los estilos CSS de la página.
+JavaScript puede eliminar elementos y atributos HTML existentes
+JavaScript puede agregar nuevos elementos y atributos HTML
+JavaScript puede reaccionar a todos los eventos HTML existentes en la página.
+JavaScript puede crear nuevos eventos HTML en la página.
+
+
+Cómo cambiar el contenido de los elementos HTML
+Cómo cambiar el estilo (CSS) de los elementos HTML
+Cómo reaccionar a los eventos DOM de HTML
+Cómo agregar y eliminar elementos HTML
+
+
+- Eventos en JS
+Un JavaScript se puede ejecutar cuando ocurre un evento, como cuando un usuario hace clic en un elemento HTML.
+Ejemplos de eventos HTML:
+Cuando un usuario hace clic con el mouse
+Cuando se ha cargado una página web
+Cuando se ha cargado una imagen
+Cuando el mouse se mueve sobre un elemento
+Cuando se cambia un campo de entrada
+Cuando se envía un formulario HTML
+Cuando un usuario pulsa una tecla
