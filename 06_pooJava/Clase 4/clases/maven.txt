@@ -1,0 +1,20 @@
+instalar maven en eclipse
+help -> install
+add 
+https://download.eclipse.org/technology/m2e/releases/latest/
+
+
+windows->preferences -> download repo index
+new maven proyect
+arquetipos plantilla webapp
+pom, info de proyecto, dependencias
+
+https://mvnrepository.com/
+agregar dependencias java servlet por error en jsp
+Java Servlet API
+
+agregar dep mysql
+
+maven -> update project
+java build path -> order -> maven dependencias
+
